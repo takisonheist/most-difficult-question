@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Difficult Question</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .question {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6200ea;
+            color: white;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Most Difficult Question</h1>
+    <div class="question">Am I annoying?</div>
+    <button class="button" id="yes">Yes</button>
+    <button class="button" id="no">No</button>
+    <div class="response" id="response"></div>
+
+    <script>
+        document.getElementById('yes').onclick = function() {
+            document.getElementById('response').innerText = "Fuck you!";
+        };
+        document.getElementById('no').onclick = function() {
+            document.getElementById('response').innerText = "That's why I love you!";
+        };
+    </script>
+</body>
+</html>
